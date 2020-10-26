@@ -1,16 +1,29 @@
-### Hi there 👋
+```kotlin
+data class Info(
+    val name = "Pedro Teles",
+    val age = 22,
+    val nationality = "Brazillian",
+    val languages = listOf("Portuguese", "English"),
+    val college = "InfoSec - FATEC São Caetano do Sul",
+    val occupation = "Software Engineer",
+    val hobbies = listOf("Programming", "Reading", "Writing", "Travel"),
+    val skills = Programming(),
+    val socialInfo = Social()
+)
 
-<!--
-**PedroRTeles/PedroRTeles** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+data class Programming(
+    val languages = listOf("Kotlin", "Java"),
+    val platforms = listOf("Android", "Backend"),
+    val frameworks = listOf("Spring Boot"),
+    val databases = listOf("MySQL", "SQL Server"),
+    val learning = listOf("Python", "Kafka", "Machine Learning Concepts"),
+    val projects = listOf("Helppet")
+)
 
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+data class Social(
+    val website = "https://pedroteles.dev",
+    val linkedin = "https://br.linkedin.com/in/pedro-teles-developer",
+    val medium = "https://medium.com/@pedroateles",
+    val github = "https://github.com/PedroRTeles"
+)
+```
